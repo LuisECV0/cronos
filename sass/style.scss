@@ -1,0 +1,54 @@
+$color-boton: #383993;
+$color-boton-hover: #5152ab;
+$background: rgb(42, 42, 85);
+$target-cronos: #dadada;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: $background;
+
+    .stopwatch-container {
+        text-align: center;
+        background-color: $target-cronos;
+        padding: 20px;
+        position: absolute;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        user-select: none;
+        .display {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .controls {
+            button {
+                font-size: 1em;
+                padding: 8px 16px;
+                margin: 5px;
+                cursor: pointer;
+                background-color: $color-boton;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+        
+                &:hover {
+                    background-color: $color-boton-hover;
+                }
+            }
+        }
+    }
+}
+
+
+

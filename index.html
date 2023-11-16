@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cronómetro</title>
+    <script src="https://kit.fontawesome.com/f92ba764dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="stopwatch-container" id="stopwatchContainer" onmousedown="startDrag(event)">
+        <h3><i class="far fa-clock"></i>  Cronómetro</h3>
+        <hr>
+        <div class="display" id="display">00:00:00</div>
+        <div class="controls">
+            <button id="startBtn" onclick="startStopwatch()"><i class="fa-solid fa-pause"></i></button>
+            <button id="resetBtn" onclick="resetStopwatch()"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+    </div>
+    <script src="./js/arrastre.js"></script>
+    <script src="./js/cronometro.js"></script>
+    <script src="./js/reloj.js"></script>
+    <script src="./js/temporizador.js"></script>
+</body>
+</html>
